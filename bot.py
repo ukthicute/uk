@@ -155,7 +155,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     port = context.args[1]
     duration = context.args[2]
 
-    flooding_command = ['./tqh', target_ip, port, duration]
+    flooding_command = ['tqh.exe', target_ip, port, duration]
     await update.message.reply_text(f'🎯 Mục tiêu: `{target_ip}:{port}`\n⏳ Thời gian: {duration} giây\n⚡ Số luồng: {DEFAULT_THREADS}', parse_mode='Markdown')
 
 
